@@ -8,6 +8,53 @@ import am.tychosonarjacoco.module1.Module1ClassB;
 
 public class Module1Test {
 
+	 @Test
+    public void testAjouter() {
+        // données d'entrées
+        CalculatriceJenkins calc = new CalculatriceJenkins(4, 5);
+        // résultat attendu
+        int resultatAttendu = 9;
+        // résultat effectif
+        int resultatEffectif = calc.ajouter();
+        // vérification
+        assertEquals(resultatAttendu, resultatEffectif);
+    }
+    
+    @Test
+    public void testSoustraire() {
+        // données d'entrées
+        CalculatriceJenkins calc = new CalculatriceJenkins(5, 4);
+        // résultat attendu
+        int resultatAttendu = 1;
+        // résultat effectif
+        int resultatEffectif = calc.soustraire();
+        // vérification
+        assertEquals(resultatAttendu, resultatEffectif);
+    }
+    
+    @Test
+    public void testMultiplier() {
+        // données d'entrées
+        CalculatriceJenkins calc = new CalculatriceJenkins(4, 5);
+        // résultat attendu
+        int resultatAttendu = 20;
+        // résultat effectif
+        int resultatEffectif = calc.multiplier();
+        // vérification
+        assertEquals(resultatAttendu, resultatEffectif);
+    }
+    
+    @Test
+    public void testDiviser() {
+        // données d'entrées
+        CalculatriceJenkins calc = new CalculatriceJenkins(20, 4);
+        // résultat attendu
+        int resultatAttendu = 5;
+        // résultat effectif
+        int resultatEffectif = calc.diviser();
+        // vérification
+        assertEquals(resultatAttendu, resultatEffectif);
+    }
 	  @Test
 	  public void testModule1A() {
 		  final String expected = "1A";
