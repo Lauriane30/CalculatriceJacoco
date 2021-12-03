@@ -17,7 +17,7 @@ public class Module1Test {
 		// résultat effectif
 		int resultatEffectif = calc.ajouter();
 		// vérification
-		assertEquals(resultatAttendu, resultatEffectif);
+		Assert.assertEquals(resultatAttendu, resultatEffectif);
 	    }
 
 	    @Test
@@ -29,7 +29,7 @@ public class Module1Test {
 		// résultat effectif
 		int resultatEffectif = calc.soustraire();
 		// vérification
-		assertEquals(resultatAttendu, resultatEffectif);
+		Assert.assertEquals(resultatAttendu, resultatEffectif);
 	    }
 
 	    @Test
@@ -41,7 +41,7 @@ public class Module1Test {
 		// résultat effectif
 		int resultatEffectif = calc.multiplier();
 		// vérification
-		assertEquals(resultatAttendu, resultatEffectif);
+		Assert.assertEquals(resultatAttendu, resultatEffectif);
 	    }
 
 	    @Test
@@ -53,7 +53,7 @@ public class Module1Test {
 		// résultat effectif
 		int resultatEffectif = calc.diviser();
 		// vérification
-		assertEquals(resultatAttendu, resultatEffectif);
+		Assert.assertEquals(resultatAttendu, resultatEffectif);
 	    }
 	  @Test
 	  public void testModule1A() {
